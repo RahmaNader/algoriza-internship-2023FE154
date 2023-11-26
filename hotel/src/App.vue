@@ -1,8 +1,7 @@
 <template>
   <div class="navbar">
     <div class="navbar-left">
-        <!-- TODO: Fix the icon photo -->
-        <i class="icon #bxs-plane-alt 1"></i>
+      <img src="@/assets/logonavbar.png" alt="Description of Image">
       <p>my Dream place</p>
     </div>
     <div class="navbar-middle">
@@ -42,6 +41,8 @@
 
 .navbar-left {
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-middle {
@@ -93,4 +94,5 @@ li,p {
 router-link {
   text-decoration: none;
 }
+
 </style>
