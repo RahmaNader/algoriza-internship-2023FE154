@@ -61,6 +61,7 @@
   margin-right: 10px;
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .navbar-right {
@@ -89,7 +90,6 @@
 li,p {
     color: #333333;
     font-style: normal;
-    cursor: pointer;
 }
 router-link {
   text-decoration: none;

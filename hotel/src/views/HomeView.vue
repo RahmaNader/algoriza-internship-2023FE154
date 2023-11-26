@@ -10,6 +10,9 @@
     <div class="search">
       <SearchBar />
     </div>
+    <div class="covid">
+      <CovidRestriction />
+    </div>
   </div>
 </template>
     
@@ -18,12 +21,14 @@
   // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import SearchBar from '@/components/SearchBar.vue';
+import CovidRestriction from '@/components/CovidRestriction.vue';
 
   export default {
     name: 'HomeView',
     components: {
     HelloWorld,
-    SearchBar
+    SearchBar,
+    CovidRestriction
 }
   }
   </script>
