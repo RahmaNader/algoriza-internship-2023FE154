@@ -1,12 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/register">Register</router-link> |
-    <router-link to="/login">Login</router-link>
-  </nav>
+  <div class="navbar">
+    <div class="navbar-left">
+        <!-- TODO: Fix the icon photo -->
+        <i class="icon #bxs-plane-alt 1"></i>
+      <p>my Dream place</p>
+    </div>
+    <div class="navbar-middle">
+      <ul class="navbar-items">
+        <li><router-link to="/" class="navbar-item">Home</router-link></li>
+        <li class="navbar-item">Discover</li>
+        <li class="navbar-item">Activities</li>
+        <li><router-link to="/about" class="navbar-item">About</router-link></li>
+        <li class="navbar-item">Contact</li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <router-link to="/login" class="button-link">Login</router-link>
 
-  <router-view/>
+    </div>
+  </div>
+  <div id="app">
+    <router-view/>
+  </div>
 </template>
 
 <style>
@@ -18,16 +33,64 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 20px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.navbar-left {
+  margin-right: auto;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.navbar-middle {
+  flex-grow: 1;
+  margin: 0 180px;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-right {
+  margin-left: auto;
+}
+.navbar-button, .button-link {
+    width: 82px;
+    height: 43px;
+    background: #2F80ED;
+    border-radius: 6px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+}
+
+li,p {
+    color: #333333;
+    font-style: normal;
+    cursor: pointer;
+}
+router-link {
+  text-decoration: none;
 }
 </style>
