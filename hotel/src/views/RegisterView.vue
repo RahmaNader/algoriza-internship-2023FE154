@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="registration">
       <RegistrationForm />
     </div>
   </template>
@@ -9,9 +9,9 @@
 import RegistrationForm from '@/components/RegistrationForm.vue';
   
   export default {
-    name: 'HomeView',
+    name: 'RegisterView',
     components: {
-    RegistrationForm
+        RegistrationForm
 }
   }
   </script>

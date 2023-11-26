@@ -25,6 +25,14 @@ const routes = [
       return import('../views/RegisterView.vue')
     }
   },
+  //login
+  {
+    path: '/login',
+    name: 'login',
+    component: function () {
+      return import('../views/SigninView.vue')
+    }
+  },
 ]
 
 const router = createRouter({
